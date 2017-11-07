@@ -9,7 +9,7 @@ def handle(msg):
 
     if command == '/hi':
         bot.sendMessage(chat_id, 'hello world motherfucker')
-    else
+    else:
         bot.sendMessage(chat_id, 'say what nigga')
 
 bot = telepot.Bot('*')
