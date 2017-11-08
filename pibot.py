@@ -1,3 +1,4 @@
+from .env import botToken
 import telepot
 from telepot.loop import MessageLoop
 
@@ -12,7 +13,7 @@ def handle(msg):
     else:
         bot.sendMessage(chat_id, 'say what nigga')
 
-bot = telepot.Bot('*')
+bot = telepot.Bot(botToken)
 
 MessageLoop(bot, handle).run_as_thread()
 print 'I am listening ...'
