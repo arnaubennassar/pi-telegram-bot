@@ -1,6 +1,7 @@
-from .env import botToken
+from env import botToken
 import telepot
 from telepot.loop import MessageLoop
+import time
 
 def handle(msg):
     chat_id = msg['chat']['id']
